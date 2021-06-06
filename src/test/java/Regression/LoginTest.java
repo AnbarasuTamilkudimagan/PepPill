@@ -59,18 +59,19 @@ public class LoginTest extends CommonBrowser
 		
 		home.dashboard();
 		System.out.println("------------------");
-		System.out.println("FIRST TESTCASE");
+		System.out.println("FIRST TESTCASE OF ANBU");
 		System.out.println("------------------");
 		//Seocnd verification
 		MobilePageMethod();
 
 		List<WebElement> hrefList =driver.findElements(By.xpath("//li[@class='item last']/div/h2/a"));
 		
-		System.out.println("Before Sorted the Products");
+		System.out.println("Before Sorted the Products---");
 		System.out.println("---------------------------------");
 		for (WebElement we: hrefList)
 		{
 			System.out.print(we.getText()+" ");
+			System.out.println("FIRST TESTCASE OF ANBU");
 		}
 		
 		Select selectDropdown = new Select (driver.findElement(By.xpath("//div[@class='sorter']/div/select")));
